@@ -15,7 +15,7 @@ namespace Infrastructure.Repositories
             return await context.Qualifications
                 .Where(q => q.Id == id)
                 .Include(q => q.Student)
-                    .ThenInclude(s => s.User)
+                    .ThenInclude(s => s!.User)
                 .Select(q => new QualificationDto
                 {
                     Id = q.Id,
@@ -31,7 +31,7 @@ namespace Infrastructure.Repositories
         {
             return await context.Qualifications
                 .Include(q => q.Student)
-                    .ThenInclude(s => s.User)
+                    .ThenInclude(s => s!.User)
                 .Select(q => new QualificationDto
                 {
                     Id = q.Id,

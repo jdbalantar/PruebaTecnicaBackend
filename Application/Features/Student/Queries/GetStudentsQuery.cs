@@ -15,11 +15,10 @@ namespace Application.Features.Student.Queries
     {
     }
 
-    public class GetStudentsQueryHandler(IUnitOfWork unitOfWork, IMapper mapper) : IRequestHandler<GetStudentsQuery, Result<ICollection<StudentDto>>>
+    public class GetStudentsQueryHandler(IUnitOfWork unitOfWork) : IRequestHandler<GetStudentsQuery, Result<ICollection<StudentDto>>>
     {
 
         private readonly IUnitOfWork unitOfWork = unitOfWork;
-        private readonly IMapper mapper = mapper;
 
 
         public async Task<Result<ICollection<StudentDto>>> Handle(GetStudentsQuery request, CancellationToken cancellationToken)

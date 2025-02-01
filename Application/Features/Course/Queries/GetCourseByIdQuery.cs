@@ -17,10 +17,9 @@ namespace Application.Features.Course.Queries
         public required int Id { get; set; }
     }
 
-    public class GetCourseByIdQueryHandler(IUnitOfWork unitOfWork, IMapper mapper) : IRequestHandler<GetCourseByIdQuery, Result<CourseDto>>
+    public class GetCourseByIdQueryHandler(IUnitOfWork unitOfWork) : IRequestHandler<GetCourseByIdQuery, Result<CourseDto>>
     {
         private readonly IUnitOfWork unitOfWork = unitOfWork;
-        private readonly IMapper mapper = mapper;
 
 
         public async Task<Result<CourseDto>> Handle(GetCourseByIdQuery request, CancellationToken cancellationToken)

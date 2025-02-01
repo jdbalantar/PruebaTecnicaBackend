@@ -14,10 +14,10 @@ namespace Infrastructure.Repositories
         {
             return await context.Courses
                 .Where(x => x.Id == id)
-                .Include(x => x.Students)?
+                .Include(x => x.Students!)
                     .ThenInclude(s => s.User)
                 .Include(x => x.Teacher)
-                    .ThenInclude(t => t.User)
+                    .ThenInclude(t => t!.User)
                 .Select(x => new CourseDto()
                 {
                     Id = x.Id,
@@ -27,16 +27,16 @@ namespace Infrastructure.Repositories
                     Students = x.Students != null
                         ? x.Students.Where(s => s.User != null).Select(s => s.User!.FullName).ToList()
                         : new List<string>()
-                }).FirstOrDefaultAsync();
+                }).FirstOrDefaultAsync()!;
         }
 
         public async Task<ICollection<CourseDto>?> GetCourses()
         {
             return await context.Courses
-                .Include(x => x.Students)?
+                .Include(x => x.Students!)
                     .ThenInclude(s => s.User)
                 .Include(x => x.Teacher)
-                    .ThenInclude(t => t.User)
+                    .ThenInclude(t => t!.User)
                 .Select(x => new CourseDto()
                 {
                     Id = x.Id,

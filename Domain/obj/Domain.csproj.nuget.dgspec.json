@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Domain\\Domain.csproj": {}
+    "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Domain\\Domain.csproj": {
+    "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\BALANTA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

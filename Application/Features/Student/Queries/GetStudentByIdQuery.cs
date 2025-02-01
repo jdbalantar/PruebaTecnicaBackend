@@ -16,11 +16,10 @@ namespace Application.Features.Student.Queries
         public required int Id { get; set; }
     }
 
-    public class GetStudentByIdQueryHandler(IUnitOfWork unitOfWork, IMapper mapper) : IRequestHandler<GetStudentByIdQuery, Result<StudentDto>>
+    public class GetStudentByIdQueryHandler(IUnitOfWork unitOfWork) : IRequestHandler<GetStudentByIdQuery, Result<StudentDto>>
     {
 
         private readonly IUnitOfWork unitOfWork = unitOfWork;
-        private readonly IMapper mapper = mapper;
         public async Task<Result<StudentDto>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
         {
             var student = await unitOfWork.StudentRepository.GetByIdAsync(request.Id);

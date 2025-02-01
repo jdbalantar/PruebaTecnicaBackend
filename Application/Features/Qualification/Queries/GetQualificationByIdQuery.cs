@@ -16,11 +16,10 @@ namespace Application.Features.Qualification.Queries
         public required int Id { get; set; }
     }
 
-    public class GetQualificationByIdQueryHandler(IUnitOfWork unitOfWork, IMapper mapper) : IRequestHandler<GetQualificationByIdQuery, Result<QualificationDto>>
+    public class GetQualificationByIdQueryHandler(IUnitOfWork unitOfWork) : IRequestHandler<GetQualificationByIdQuery, Result<QualificationDto>>
     {
 
         private readonly IUnitOfWork unitOfWork = unitOfWork;
-        private readonly IMapper mapper = mapper;
 
         public async Task<Result<QualificationDto>> Handle(GetQualificationByIdQuery request, CancellationToken cancellationToken)
         {

@@ -21,10 +21,9 @@ namespace Application.Features.Teacher.Commands
         public required UpdateTeacherDto Data { get; set; }
     }
 
-    public class UpdateTeacherCommandHandler(IUnitOfWork unitOfWork, IMapper mapper, UserManager<User> userManager) : IRequestHandler<UpdateTeacherCommand, Result<TeacherDto>>
+    public class UpdateTeacherCommandHandler(IUnitOfWork unitOfWork, UserManager<User> userManager) : IRequestHandler<UpdateTeacherCommand, Result<TeacherDto>>
     {
         private readonly IUnitOfWork unitOfWork = unitOfWork;
-        private readonly IMapper mapper = mapper;
         private readonly UserManager<User> userManager = userManager;
 
         public async Task<Result<TeacherDto>> Handle(UpdateTeacherCommand request, CancellationToken cancellationToken)

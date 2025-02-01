@@ -5380,11 +5380,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Api\\Api.csproj",
+      "projectPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\BALANTA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Api\\obj\\",
+      "outputPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5407,14 +5407,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Application\\Application.csproj"
+            "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Application.csproj"
             },
-            "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Domain\\Domain.csproj"
+            "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
