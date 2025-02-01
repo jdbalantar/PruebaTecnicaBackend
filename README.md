@@ -5,8 +5,11 @@ Este proyecto es una aplicación backend desarrollada en **.NET Core** que gesti
 ## Tabla de Contenidos
 
 - [Estructura del Proyecto](#estructura-del-proyecto)
+- [Arquitectura del Proyecto](#arquitectura-del-proyecto)
+- [Paquetes NuGet Utilizados](#paquetes-nuget-utilizados)
 - [Configuración Inicial](#configuracion-inicial)
 - [Uso](#uso)
+- [Configuración de la Base de Datos](#configuracion-de-la-base-de-datos)
 - [Entidades Principales](#entidades-principales)
 - [Auditoría](#auditoria)
 - [Consideraciones Adicionales](#consideraciones-adicionales)
@@ -18,6 +21,28 @@ El proyecto está organizado en las siguientes capas:
 - **Domain**: Contiene las entidades principales y sus configuraciones.
 - **Infrastructure**: Maneja la configuración de la base de datos, repositorios y la lógica de acceso a datos.
 - **Presentation**: Incluye los controladores de la API y la configuración de la aplicación.
+
+## Arquitectura del Proyecto
+
+Este proyecto sigue una arquitectura basada en **capas** con separación de responsabilidades:
+
+1. **Domain Layer (Capa de Dominio)**: Define las entidades y la lógica de negocio.
+2. **Infrastructure Layer (Capa de Infraestructura)**: Contiene la configuración de Entity Framework Core y los repositorios.
+3. **Application Layer (Capa de Aplicación)**: Contiene los servicios de aplicación y la lógica específica de la API.
+4. **Presentation Layer (Capa de Presentación)**: Contiene los controladores de la API y las configuraciones de ASP.NET Core.
+
+## Paquetes NuGet Utilizados
+
+El proyecto usa los siguientes paquetes NuGet:
+
+- **Microsoft.EntityFrameworkCore** - ORM para gestionar la base de datos.
+- **Microsoft.EntityFrameworkCore.SqlServer** - Proveedor de SQL Server para EF Core.
+- **Microsoft.EntityFrameworkCore.Tools** - Herramientas de migraciones y gestión de la base de datos.
+- **Microsoft.AspNetCore.Identity** - Manejo de autenticación y usuarios.
+- **Swashbuckle.AspNetCore** - Generación de documentación con Swagger.
+- **Serilog** - Registro de logs.
+- **MediatR** - Implementación del patrón Mediator para desacoplar la lógica de negocio.
+- **AutoMapper** - Mapeo automático entre objetos DTO y entidades.
 
 ## Configuración Inicial
 
@@ -34,7 +59,19 @@ El proyecto está organizado en las siguientes capas:
    dotnet restore
    ```
 
-3. **Aplicar migraciones y actualizar la base de datos**:
+3. **Configurar la cadena de conexión en `appsettings.json`**:
+
+   Ubica el archivo `appsettings.json` en el proyecto **Presentation** y modifica la sección `ConnectionStrings` con la configuración de tu base de datos:
+
+   ```json
+   "ConnectionStrings": {
+     "DefaultConnection": "Server=TU_SERVIDOR;Database=TU_BASE_DE_DATOS;User Id=TU_USUARIO;Password=TU_CONTRASEÑA;"
+   }
+   ```
+
+   ⚠ **Importante**: No olvides reemplazar `TU_SERVIDOR`, `TU_BASE_DE_DATOS`, `TU_USUARIO` y `TU_CONTRASEÑA` con los valores adecuados.
+
+4. **Aplicar migraciones y actualizar la base de datos**:
 
    ```bash
    dotnet ef database update
@@ -51,6 +88,22 @@ dotnet run --project Presentation
 ```
 
 La API estará disponible en `https://localhost:5001` o `http://localhost:5000`, según la configuración.
+
+## Configuración de la Base de Datos
+
+El proyecto utiliza **Entity Framework Core** para la gestión de la base de datos. Asegúrate de que el servidor SQL configurado en `appsettings.json` esté activo antes de ejecutar las migraciones.
+
+Si necesitas regenerar las migraciones, puedes ejecutar:
+
+```bash
+dotnet ef migrations add NombreDeMigracion
+```
+
+Para eliminar las migraciones más recientes:
+
+```bash
+dotnet ef migrations remove
+```
 
 ## Entidades Principales
 
@@ -70,9 +123,19 @@ El sistema implementa una auditoría para rastrear los cambios en las entidades.
 
 - **Manejo de Relaciones**: Se ha configurado el comportamiento de eliminación en las relaciones para evitar conflictos de eliminación en cascada múltiple.
 - **Datos Semilla**: Se han definido datos iniciales para las entidades principales en el método `SeedData` del `ApplicationDbContext`.
+- **Autenticación y Autorización**: El proyecto usa **ASP.NET Core Identity** para la gestión de usuarios y roles.
+- **Manejo de Errores**: Se ha implementado middleware para capturar y manejar errores en la API.
+- **Documentación API**: Se recomienda utilizar **Swagger** para explorar los endpoints disponibles. Puedes habilitarlo en `Startup.cs` agregando:
+
+  ```csharp
+  services.AddSwaggerGen();
+  ```
+
+  Y acceder a la documentación en `https://localhost:5001/swagger`.
 
 Para más detalles, revisa los archivos fuente y la configuración en el repositorio.
 
 ---
 
 _Desarrollado por [jdbalantar](https://github.com/jdbalantar)._
+
