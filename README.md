@@ -107,10 +107,10 @@ O desde el package manager
 Add-Migration "NombreMigración" -Context ApplicationDbContext
 ```
 
-Para eliminar las migraciones más recientes:
+Para actualizar la base de datos:
 
 ```bash
-dotnet ef migrations remove
+dotnet ef update-database
 ```
 
 O desde el package manager
@@ -118,7 +118,7 @@ O desde el package manager
 
 ```bash
 Update-Database -Context ApplicationDbContext
-`
+```
 
 ## Entidades Principales
 
