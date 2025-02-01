@@ -2,6 +2,7 @@
 using Application.DTOs.Students;
 using Application.DTOs.Teachers;
 using Application.Interfaces.Infrastructure.Repositories;
+using Application.Transversal;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
@@ -39,7 +40,7 @@ namespace Application.Features.Student.Commands
                 exists = await unitOfWork.CourseRepository.Exists(x => x.Id == request.Data.CourseId, cancellationToken);
                 if (!exists)
                 {
-                    return Result<StudentDto>.Error("No existe ningún curso con el id " + request.Data.CourseId);
+                    return Result<StudentDto>.NotFound("No existe ningún curso con el id " + request.Data.CourseId);
                 }
 
                 int userId = await unitOfWork.StudentRepository.GetUserId(request.Id);
@@ -58,10 +59,10 @@ namespace Application.Features.Student.Commands
                 var updateResult = await userManager.UpdateAsync(user);
                 if (!updateResult.Succeeded)
                 {
-                    return Result<StudentDto>.BadRequest(string.Join(", ", updateResult.Errors.Select(e => e.Description)));
+                    return Result<StudentDto>.BadRequest("No se pudo actualizar el estudiante", updateResult.GetErrorResult());
                 }
 
-                var studentToUpdate = await unitOfWork.StudentRepository.FindAsync(x => x.Id == request.Id);
+                var studentToUpdate = await unitOfWork.StudentRepository.FindAsync(x => x.Id == request.Id, cancellationToken);
                 studentToUpdate!.CourseId = request.Data.CourseId;
                 unitOfWork.StudentRepository.Update(studentToUpdate);
                 var student = await unitOfWork.StudentRepository.GetByIdAsync(request.Id);

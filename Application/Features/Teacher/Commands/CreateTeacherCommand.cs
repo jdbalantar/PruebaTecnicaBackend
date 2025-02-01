@@ -1,6 +1,8 @@
 ﻿using Application.DTOs;
+using Application.DTOs.Students;
 using Application.DTOs.Teachers;
 using Application.Interfaces.Infrastructure.Repositories;
+using Application.Transversal;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
@@ -41,7 +43,7 @@ namespace Application.Features.Teacher.Commands
 
                 if (!createResult.Succeeded)
                 {
-                    return Result<TeacherDto>.Error(string.Join(", ", createResult.Errors.Select(e => e.Description)));
+                    return Result<TeacherDto>.BadRequest("No se pudo crear el docente", createResult.GetErrorResult());
                 }
 
                 var teacher = new Domain.Entities.Teacher()

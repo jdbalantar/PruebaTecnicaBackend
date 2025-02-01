@@ -2,6 +2,7 @@
 using Application.DTOs.Students;
 using Application.DTOs.Teachers;
 using Application.Interfaces.Infrastructure.Repositories;
+using Application.Transversal;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
@@ -32,7 +33,7 @@ namespace Application.Features.Student.Commands
                 bool courseExists = await unitOfWork.CourseRepository.Exists(x => x.Id == request.Data.CourseId, cancellationToken);
                 if (!courseExists)
                 {
-                    return Result<StudentDto>.Error("No existe ningún curso con el id " + request.Data.CourseId);
+                    return Result<StudentDto>.NotFound("No existe ningún curso con el id " + request.Data.CourseId);
                 }
 
                 var user = new User
@@ -48,7 +49,7 @@ namespace Application.Features.Student.Commands
 
                 if (!result.Succeeded)
                 {
-                    return Result<StudentDto>.Error(string.Join(", ", result.Errors.Select(e => e.Description)));
+                    return Result<StudentDto>.BadRequest("No se pudo crear el estudiante", result.GetErrorResult());
                 }
 
                 var student = new Domain.Entities.Student()

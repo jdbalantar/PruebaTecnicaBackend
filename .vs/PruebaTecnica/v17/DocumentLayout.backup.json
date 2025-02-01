@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\",
+  "WorkspaceRootPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Migrations\\20250201041149_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20250201041149_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\api\\controllers\\v1\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|solutionrelative:api\\controllers\\v1\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Migrations\\20250201041036_SeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20250201041036_SeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\api\\controllers\\v1\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|solutionrelative:api\\controllers\\v1\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{111463A2-8C74-4D07-B989-369BD4C5AEE6}|Infrastructure\\Infrastructure.csproj|c:\\users\\balanta\\source\\repos\\prueba tecnica\\infrastructure\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111463A2-8C74-4D07-B989-369BD4C5AEE6}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\api\\controllers\\v1\\qualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|solutionrelative:api\\controllers\\v1\\qualificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\api\\controllers\\v1\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|solutionrelative:api\\controllers\\v1\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,40 +43,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250201041149_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Migrations\\20250201041149_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250201041149_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Migrations\\20250201041149_InitialCreate.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20250201041149_InitialCreate.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\TeachersController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\v1\\TeachersController.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\TeachersController.cs",
+              "RelativeToolTip": "Api\\Controllers\\v1\\TeachersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T04:11:50.11Z",
+              "WhenOpened": "2025-02-01T04:22:54.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20250201041036_SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Migrations\\20250201041036_SeedData.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250201041036_SeedData.cs",
-              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\Migrations\\20250201041036_SeedData.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20250201041036_SeedData.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\StudentController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\v1\\StudentController.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\StudentController.cs",
+              "RelativeToolTip": "Api\\Controllers\\v1\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T04:10:36.705Z",
+              "WhenOpened": "2025-02-01T04:22:50.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\Prueba Tecnica\\Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\DbContext\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAowKwAAAAAAAAAAAAAAA==",
+              "Title": "QualificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\QualificationsController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\v1\\QualificationsController.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\QualificationsController.cs",
+              "RelativeToolTip": "Api\\Controllers\\v1\\QualificationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T04:02:35.684Z",
+              "WhenOpened": "2025-02-01T04:22:46.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\v1\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\CoursesController.cs",
+              "RelativeToolTip": "Api\\Controllers\\v1\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T04:22:42.966Z",
               "EditorCaption": ""
             }
           ]

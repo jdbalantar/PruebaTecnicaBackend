@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers.v1
 {
-    [AllowAnonymous]
     public class TeachersController : BaseApiController<AuthController>
     {
 

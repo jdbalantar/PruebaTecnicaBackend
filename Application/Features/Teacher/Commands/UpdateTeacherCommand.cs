@@ -1,6 +1,7 @@
 ﻿using Application.DTOs;
 using Application.DTOs.Teachers;
 using Application.Interfaces.Infrastructure.Repositories;
+using Application.Transversal;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
@@ -52,7 +53,7 @@ namespace Application.Features.Teacher.Commands
                 var updateResult = await userManager.UpdateAsync(user);
                 if (!updateResult.Succeeded)
                 {
-                    return Result<TeacherDto>.Error(string.Join(", ", updateResult.Errors.Select(e => e.Description)));
+                    return Result<TeacherDto>.BadRequest("No se pudo crear el docente", updateResult.GetErrorResult());
                 }
 
 

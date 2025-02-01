@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\application\\features\\teacher\\commands\\updateteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|solutionrelative:application\\features\\teacher\\commands\\updateteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\application\\features\\teacher\\commands\\createteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|solutionrelative:application\\features\\teacher\\commands\\createteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\application\\features\\student\\commands\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|solutionrelative:application\\features\\student\\commands\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\api\\controllers\\v1\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B01D432E-ACBC-4E1A-B380-9017DFE389D7}|Api\\Api.csproj|solutionrelative:api\\controllers\\v1\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|c:\\users\\balanta\\source\\repos\\pruebatecnicabackend\\application\\transversal\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0848CB2-F894-4478-9633-59C203085AB5}|Application\\Application.csproj|solutionrelative:application\\transversal\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +43,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateTeacherCommand.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Features\\Teacher\\Commands\\UpdateTeacherCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Teacher\\Commands\\UpdateTeacherCommand.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Features\\Teacher\\Commands\\UpdateTeacherCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Teacher\\Commands\\UpdateTeacherCommand.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA8wDcAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T04:26:02.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateTeacherCommand.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Features\\Teacher\\Commands\\CreateTeacherCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Teacher\\Commands\\CreateTeacherCommand.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Features\\Teacher\\Commands\\CreateTeacherCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Teacher\\Commands\\CreateTeacherCommand.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T04:25:37.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\StudentController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\v1\\StudentController.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Api\\Controllers\\v1\\StudentController.cs",
+              "RelativeToolTip": "Api\\Controllers\\v1\\StudentController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAywCMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T04:24:40.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateStudentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Features\\Student\\Commands\\CreateStudentCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Student\\Commands\\CreateStudentCommand.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Features\\Student\\Commands\\CreateStudentCommand.cs",
+              "RelativeToolTip": "Application\\Features\\Student\\Commands\\CreateStudentCommand.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAQwCMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T04:23:55.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Util.cs",
+              "DocumentMoniker": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Transversal\\Util.cs",
+              "RelativeDocumentMoniker": "Application\\Transversal\\Util.cs",
+              "ToolTip": "C:\\Users\\BALANTA\\source\\repos\\PruebaTecnicaBackend\\Application\\Transversal\\Util.cs",
+              "RelativeToolTip": "Application\\Transversal\\Util.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T04:23:39.8Z",
+              "EditorCaption": ""
             }
           ]
         }
