@@ -1,0 +1,9 @@
+Add-Migration "NombreMigración" -Context ApplicationDbContext
+
+Contexto
+
+Update-Database -Context ApplicationDbContext
+
+Generar SQL del esquema actual de la empresa: 
+
+Script-Migration -Idempotent -Context ApplicationDbContext -o Presentation\HEBA.Rest\HEBA.Admin.Api\bin\Debug\net7.0\heba_scheme.sql
