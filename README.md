@@ -19,8 +19,10 @@ Este proyecto es una aplicación backend desarrollada en **.NET Core** que gesti
 El proyecto está organizado en las siguientes capas:
 
 - **Domain**: Contiene las entidades principales y sus configuraciones.
+- **Application**: Contiene la lógica de negocio y los casos de uso
 - **Infrastructure**: Maneja la configuración de la base de datos, repositorios y la lógica de acceso a datos.
 - **Presentation**: Incluye los controladores de la API y la configuración de la aplicación.
+
 
 ## Arquitectura del Proyecto
 
@@ -65,7 +67,7 @@ El proyecto usa los siguientes paquetes NuGet:
 
    ```json
    "ConnectionStrings": {
-     "DefaultConnection": "Server=TU_SERVIDOR;Database=TU_BASE_DE_DATOS;User Id=TU_USUARIO;Password=TU_CONTRASEÑA;"
+     "Default": "Server=TU_SERVIDOR;Database=TU_BASE_DE_DATOS;User Id=TU_USUARIO;Password=TU_CONTRASEÑA;"
    }
    ```
 
@@ -131,7 +133,7 @@ El sistema implementa una auditoría para rastrear los cambios en las entidades.
   services.AddSwaggerGen();
   ```
 
-  Y acceder a la documentación en `https://localhost:5001/swagger`.
+  Y acceder a la documentación en `https://localhost:7119/swagger/index.html`.
 
 Para más detalles, revisa los archivos fuente y la configuración en el repositorio.
 

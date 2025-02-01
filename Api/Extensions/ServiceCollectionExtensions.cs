@@ -164,7 +164,7 @@ namespace Api.Extensions
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "CleanTemplate",
+                    Title = "Prueba técnica de Juan David Balanta Rentería para FINANZAUTO",
                     License = new OpenApiLicense()
                     {
                         Name = "Copyright - Derechos reservados"

@@ -7,7 +7,7 @@
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanTemplate.Api");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "PruebaTecnica.Api");
                 options.RoutePrefix = "swagger";
                 options.DisplayRequestDuration();
             });
