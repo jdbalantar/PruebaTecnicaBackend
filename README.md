@@ -63,7 +63,7 @@ El proyecto usa los siguientes paquetes NuGet:
 
 3. **Configurar la cadena de conexión en `appsettings.json`**:
 
-   Ubica el archivo `appsettings.json` en el proyecto **Presentation** y modifica la sección `ConnectionStrings` con la configuración de tu base de datos:
+   Ubica el archivo `appsettings.json` en el proyecto **Presentation (Api)** y modifica la sección `ConnectionStrings` con la configuración de tu base de datos:
 
    ```json
    "ConnectionStrings": {
@@ -86,7 +86,7 @@ El proyecto usa los siguientes paquetes NuGet:
 Para ejecutar la aplicación:
 
 ```bash
-dotnet run --project Presentation
+dotnet run --project Api
 ```
 
 La API estará disponible en `https://localhost:7119` o `http://localhost:5079`, según la configuración.
