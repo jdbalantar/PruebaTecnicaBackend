@@ -29,11 +29,13 @@ namespace Infrastructure.EntityConfiguration
 
             builder.HasOne(u => u.Student)
                 .WithOne(s => s.User)
-                .HasForeignKey<Student>(s => s.UserId);
+                .HasForeignKey<Student>(s => s.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasOne(u => u.Teacher)
                 .WithOne(s => s.User)
-                .HasForeignKey<Teacher>(s => s.UserId);
+                .HasForeignKey<Teacher>(s => s.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
 
 
         }

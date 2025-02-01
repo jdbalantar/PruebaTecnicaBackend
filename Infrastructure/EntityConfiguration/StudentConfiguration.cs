@@ -13,11 +13,13 @@ namespace Infrastructure.EntityConfiguration
 
             builder.HasOne(x => x.User)
                 .WithOne(x => x.Student)
-                .HasForeignKey<Student>(x => x.UserId);
+                .HasForeignKey<Student>(x => x.UserId)
+                .OnDelete(DeleteBehavior.NoAction); ;
 
             builder.HasOne(x => x.Course)
                 .WithMany(x => x.Students)
-                .HasForeignKey(x => x.CourseId);
+                .HasForeignKey(x => x.CourseId)
+                .OnDelete(DeleteBehavior.NoAction); ;
         }
     }
 }

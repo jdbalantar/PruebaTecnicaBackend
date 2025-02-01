@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250201041149_InitialCreate")]
+    [Migration("20250201043555_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -314,14 +314,6 @@ namespace Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
-                            CreatedBy = "",
-                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LastModifiedBy = "",
-                            UserId = 1
-                        },
-                        new
-                        {
                             Id = 10,
                             CreatedBy = "",
                             CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -428,7 +420,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3df8d070-2f77-4508-8485-7bf4a691e360",
+                            ConcurrencyStamp = "9e8f4753-7924-4e2c-8095-39839e1cca7f",
                             EmailConfirmed = true,
                             FirstName = "Carlos",
                             Identification = "100000001",
@@ -442,7 +434,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5a5d6f09-d8cb-49da-99a4-23cdb7d68eae",
+                            ConcurrencyStamp = "677e8b62-7349-40d4-b32d-29197b723382",
                             EmailConfirmed = true,
                             FirstName = "Lucía",
                             Identification = "100000002",
@@ -456,7 +448,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "49aa1dab-0b20-47d0-bf21-c354cab79160",
+                            ConcurrencyStamp = "d388012a-36f2-4609-a2cd-9175021b8375",
                             EmailConfirmed = true,
                             FirstName = "Miguel",
                             Identification = "200000001",
@@ -470,7 +462,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9d697d62-9b01-4c3a-aba2-ad63fefc957e",
+                            ConcurrencyStamp = "0271cffc-67dc-4109-826a-0800a460a79a",
                             EmailConfirmed = true,
                             FirstName = "Ana",
                             Identification = "200000002",
@@ -484,7 +476,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d11eeb9a-5e97-44af-b54a-e057d093c449",
+                            ConcurrencyStamp = "22ca07b9-0ede-4560-b644-57a9a506c8f2",
                             EmailConfirmed = true,
                             FirstName = "Pedro",
                             Identification = "200000003",
@@ -656,7 +648,7 @@ namespace Infrastructure.Migrations
                     b.HasOne("Domain.Entities.Teacher", "Teacher")
                         .WithMany("Courses")
                         .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Teacher");
@@ -678,13 +670,13 @@ namespace Infrastructure.Migrations
                     b.HasOne("Domain.Entities.Course", "Course")
                         .WithMany("Students")
                         .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.User", "User")
                         .WithOne("Student")
                         .HasForeignKey("Domain.Entities.Student", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Course");
@@ -697,7 +689,7 @@ namespace Infrastructure.Migrations
                     b.HasOne("Domain.Entities.User", "User")
                         .WithOne("Teacher")
                         .HasForeignKey("Domain.Entities.Teacher", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("User");

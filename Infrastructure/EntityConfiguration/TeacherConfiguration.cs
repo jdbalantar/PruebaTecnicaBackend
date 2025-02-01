@@ -13,15 +13,8 @@ namespace Infrastructure.EntityConfiguration
 
             builder.HasMany(x => x.Courses)
                 .WithOne(x => x.Teacher)
-                .HasForeignKey(x => x.TeacherId);
-
-            builder.HasData(
-                new Teacher
-                {
-                    Id = 1,
-                    UserId = 1
-                }
-            );
+                .HasForeignKey(x => x.TeacherId)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

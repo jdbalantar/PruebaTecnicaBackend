@@ -134,8 +134,7 @@ namespace Infrastructure.Migrations
                         name: "FK_Teachers_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -244,8 +243,7 @@ namespace Infrastructure.Migrations
                         name: "FK_Courses_Teachers_TeacherId",
                         column: x => x.TeacherId,
                         principalTable: "Teachers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -268,14 +266,12 @@ namespace Infrastructure.Migrations
                         name: "FK_Students_Courses_CourseId",
                         column: x => x.CourseId,
                         principalTable: "Courses",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Students_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -307,11 +303,11 @@ namespace Infrastructure.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "Identification", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { 1, 0, "3df8d070-2f77-4508-8485-7bf4a691e360", null, true, "Carlos", "100000001", "García", false, null, null, null, null, null, false, null, false, "carlosg" },
-                    { 2, 0, "5a5d6f09-d8cb-49da-99a4-23cdb7d68eae", null, true, "Lucía", "100000002", "Fernández", false, null, null, null, null, null, false, null, false, "luciaf" },
-                    { 3, 0, "49aa1dab-0b20-47d0-bf21-c354cab79160", null, true, "Miguel", "200000001", "Torres", false, null, null, null, null, null, false, null, false, "miguelt" },
-                    { 4, 0, "9d697d62-9b01-4c3a-aba2-ad63fefc957e", null, true, "Ana", "200000002", "Martínez", false, null, null, null, null, null, false, null, false, "anam" },
-                    { 5, 0, "d11eeb9a-5e97-44af-b54a-e057d093c449", null, true, "Pedro", "200000003", "Ramírez", false, null, null, null, null, null, false, null, false, "pedror" }
+                    { 1, 0, "9e8f4753-7924-4e2c-8095-39839e1cca7f", null, true, "Carlos", "100000001", "García", false, null, null, null, null, null, false, null, false, "carlosg" },
+                    { 2, 0, "677e8b62-7349-40d4-b32d-29197b723382", null, true, "Lucía", "100000002", "Fernández", false, null, null, null, null, null, false, null, false, "luciaf" },
+                    { 3, 0, "d388012a-36f2-4609-a2cd-9175021b8375", null, true, "Miguel", "200000001", "Torres", false, null, null, null, null, null, false, null, false, "miguelt" },
+                    { 4, 0, "0271cffc-67dc-4109-826a-0800a460a79a", null, true, "Ana", "200000002", "Martínez", false, null, null, null, null, null, false, null, false, "anam" },
+                    { 5, 0, "22ca07b9-0ede-4560-b644-57a9a506c8f2", null, true, "Pedro", "200000003", "Ramírez", false, null, null, null, null, null, false, null, false, "pedror" }
                 });
 
             migrationBuilder.InsertData(
@@ -319,7 +315,6 @@ namespace Infrastructure.Migrations
                 columns: new[] { "Id", "CreatedBy", "CreatedOn", "LastModifiedBy", "LastModifiedOn", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null, 1 },
                     { 10, "", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null, 1 },
                     { 11, "", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "", null, 2 }
                 });
