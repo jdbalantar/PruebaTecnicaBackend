@@ -89,7 +89,7 @@ Para ejecutar la aplicación:
 dotnet run --project Presentation
 ```
 
-La API estará disponible en `https://localhost:5001` o `http://localhost:5000`, según la configuración.
+La API estará disponible en `https://localhost:7119` o `http://localhost:5079`, según la configuración.
 
 ## Configuración de la Base de Datos
 
