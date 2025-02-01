@@ -27,7 +27,7 @@ namespace Application.Features.Qualification.Commands
             }
             unitOfWork.QualificationRepository.Delete(qualification);
             await unitOfWork.SaveChangesAsync(cancellationToken);
-            return Result<bool?>.Ok();
+            return Result<bool?>.Ok("Calificación eliminada con éxito");
         }
     }
 }

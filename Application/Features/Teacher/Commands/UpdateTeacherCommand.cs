@@ -59,7 +59,7 @@ namespace Application.Features.Teacher.Commands
 
                 var result = await unitOfWork.TeacherRepository.GetTeacher(request.Id);
                 transaction.Complete();
-                return Result<TeacherDto>.Ok(result);
+                return Result<TeacherDto>.Ok("Profesor actualizado con éxito", result);
             }
         }
     }

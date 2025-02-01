@@ -29,7 +29,7 @@ namespace Application.Features.Student.Commands
 
             unitOfWork.StudentRepository.Delete(student);
             await unitOfWork.SaveChangesAsync(cancellationToken);
-            return Result<bool?>.Ok();
+            return Result<bool?>.Ok("Estudiante eliminado con éxito");
         }
     }
 }

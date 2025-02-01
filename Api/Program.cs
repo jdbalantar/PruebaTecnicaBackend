@@ -4,7 +4,6 @@ using Api.Middlewares;
 using Application.Extensions;
 using Infrastructure.Extensions;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Serilog;
 
@@ -27,25 +26,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseApiVersioning();
 app.MapControllers();
-
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    try
-    {
-        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-        if (!roleManager.Roles.Any())
-        {
-            await Infrastructure.Identity.Seeds.DefaultRoles.SeedAsync(roleManager);
-            Log.Information("Finalizó la inserción de datos por defecto");
-            Log.Information("Iniciando aplicación");
-        }
-    }
-    catch (Exception ex)
-    {
-        Log.Error(ex, "Ocurrió un error al insertar los datos por defecto");
-    }
-}
 
 await app.RunAsync();
 

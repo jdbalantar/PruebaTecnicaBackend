@@ -30,11 +30,11 @@ namespace Application.Features.Qualification.Commands
             }
 
             var qualification = mapper.Map<Domain.Entities.Qualification>(request.Data);
-            
+
             await unitOfWork.QualificationRepository.AddAsync(qualification, cancellationToken);
             await unitOfWork.SaveChangesAsync(cancellationToken);
             var result = await unitOfWork.QualificationRepository.GetQualification(qualification.Id);
-            return Result<QualificationDto>.Ok(result);
+            return Result<QualificationDto>.Ok("Calificación creada con éxito", result);
         }
     }
 }

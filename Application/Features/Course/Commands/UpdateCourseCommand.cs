@@ -40,7 +40,7 @@ namespace Application.Features.Course.Commands
             unitOfWork.CourseRepository.Update(course);
             await unitOfWork.SaveChangesAsync(cancellationToken);
             var result = await unitOfWork.CourseRepository.GetCourse(course.Id);
-            return Result<CourseDto>.Ok(result);
+            return Result<CourseDto>.Ok("Curso actualizado con éxito", result);
         }
     }
 

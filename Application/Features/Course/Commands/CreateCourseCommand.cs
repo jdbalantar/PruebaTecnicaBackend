@@ -32,7 +32,7 @@ namespace Application.Features.Course.Commands
             await unitOfWork.CourseRepository.AddAsync(course, cancellationToken);
             await unitOfWork.SaveChangesAsync(cancellationToken);
             var result = await unitOfWork.CourseRepository.GetCourse(course.Id);
-            return Result<CourseDto>.Ok(result);
+            return Result<CourseDto>.Ok("Curso creado con éxito", result);
         }
     }
 }

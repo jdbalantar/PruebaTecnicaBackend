@@ -154,7 +154,6 @@ namespace Infrastructure.Identity.Services
                 var result = await _userManager.CreateAsync(user, request.Password);
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, Roles.Basic.ToString());
                     transaction.Complete();
                     logger.LogInformation($"Usuario registrado");
                     return Result<string>.Ok($"Usuario registrado");

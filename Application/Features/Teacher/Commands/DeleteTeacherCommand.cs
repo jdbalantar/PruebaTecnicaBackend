@@ -30,7 +30,7 @@ namespace Application.Features.Teacher.Commands
             unitOfWork.TeacherRepository.Delete(teacher);
             await unitOfWork.SaveChangesAsync(cancellationToken);
 
-            return Result<bool?>.Ok();
+            return Result<bool?>.Ok("Profesor eliminado con éxito");
         }
     }
 }

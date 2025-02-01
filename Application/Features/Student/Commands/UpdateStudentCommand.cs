@@ -68,7 +68,7 @@ namespace Application.Features.Student.Commands
                 var student = await unitOfWork.StudentRepository.GetByIdAsync(request.Id);
                 transaction.Complete();
 
-                return Result<StudentDto>.Ok(student);
+                return Result<StudentDto>.Ok("Estudiante actualizado con éxito", student);
             }
 
         }

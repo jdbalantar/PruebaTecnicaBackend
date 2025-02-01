@@ -63,7 +63,7 @@ namespace Application.Features.Student.Commands
                 var studentDto = await unitOfWork.StudentRepository.GetByIdAsync(student.Id);
                 transaction.Complete();
 
-                return Result<StudentDto>.Ok(studentDto);
+                return Result<StudentDto>.Ok("Estudiante creado con éxito", studentDto);
 
             }
 

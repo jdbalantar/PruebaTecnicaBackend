@@ -39,7 +39,7 @@ namespace Application.Features.Qualification.Commands
             unitOfWork.QualificationRepository.Update(qualification);
             await unitOfWork.SaveChangesAsync(cancellationToken);
             var result = await unitOfWork.QualificationRepository.GetQualification(qualification.Id);
-            return Result<QualificationDto>.Ok(result);
+            return Result<QualificationDto>.Ok("Calificación actualizada con éxito", result);
 
         }
     }

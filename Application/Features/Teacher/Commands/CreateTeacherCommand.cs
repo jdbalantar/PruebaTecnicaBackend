@@ -56,7 +56,7 @@ namespace Application.Features.Teacher.Commands
                 var result = await unitOfWork.TeacherRepository.GetTeacher(teacher.Id);
                 transaction.Complete();
 
-                return Result<TeacherDto>.Ok(result);
+                return Result<TeacherDto>.Ok("Profesor creado con éxito", result);
 
             }
         }
