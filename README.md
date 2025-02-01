@@ -101,11 +101,24 @@ Si necesitas regenerar las migraciones, puedes ejecutar:
 dotnet ef migrations add NombreDeMigracion
 ```
 
+O desde el package manager
+
+```bash
+Add-Migration "NombreMigración" -Context ApplicationDbContext
+```
+
 Para eliminar las migraciones más recientes:
 
 ```bash
 dotnet ef migrations remove
 ```
+
+O desde el package manager
+
+
+```bash
+Update-Database -Context ApplicationDbContext
+`
 
 ## Entidades Principales
 

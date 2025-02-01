@@ -2,6 +2,7 @@ using Api.Extensions;
 using Api.Filters;
 using Api.Middlewares;
 using Application.Extensions;
+using Infrastructure.DbContext;
 using Infrastructure.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -26,6 +27,11 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseApiVersioning();
 app.MapControllers();
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await dbContext.Database.EnsureCreatedAsync();
+}
 
 await app.RunAsync();
 
